@@ -1,0 +1,29 @@
+Arguments: 
+  /usr/local/Cellar/node/17.0.1/bin/node /usr/local/Cellar/yarn/1.22.17/libexec/bin/yarn.js add react@latest react-dom@latest
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/sbin:/Users/lucaspick/.antigen/bundles/robbyrussell/oh-my-zsh/lib:/Users/lucaspick/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/git:/Users/lucaspick/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/pip:/Users/lucaspick/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/command-not-found:/Users/lucaspick/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/docker:/Users/lucaspick/.antigen/bundles/zsh-users/zsh-syntax-highlighting:/Users/lucaspick/.antigen/bundles/zsh-users/zsh-completions:/Users/lucaspick/.antigen/bundles/zsh-users/zsh-autosuggestions
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  17.0.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/react: ETIMEDOUT
+      at Timeout._onTimeout (/usr/local/Cellar/yarn/1.22.17/libexec/lib/cli.js:141543:19)
+      at listOnTimeout (node:internal/timers:557:17)
+      at processTimers (node:internal/timers:500:7)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
