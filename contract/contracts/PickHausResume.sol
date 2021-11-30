@@ -7,6 +7,8 @@ import "@openzeppelin/contracts/security/Pausable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
+// imports were gathered from openzeppelin wizard as much as possible
+
 contract PickHausResume is ERC721, ERC721URIStorage, Pausable, Ownable {
     using Counters for Counters.Counter;
 
@@ -14,9 +16,13 @@ contract PickHausResume is ERC721, ERC721URIStorage, Pausable, Ownable {
 
     constructor() ERC721("PickHausResume", "LJP") {}
 
+    // Define boolean mapping for if the request has been approved or not
     mapping(address=>bool) public approved;
+
+    // Define array for AddressLUT
     address[] public addressLUT;
 
+    // Get address length
     function size()
         public
         view
@@ -25,6 +31,7 @@ contract PickHausResume is ERC721, ERC721URIStorage, Pausable, Ownable {
         return addressLUT.length;
     }
 
+    // This function is to send a transaction to request the resume
     function requestResume() 
         public
     {
@@ -32,6 +39,7 @@ contract PickHausResume is ERC721, ERC721URIStorage, Pausable, Ownable {
         addressLUT.push(msg.sender);
     }
 
+    // Future state where safeMint is instantiated after this approval to return my resume as an NFT to the requester after approval (or payment :))
     function approveResumeRequest(address _address)
         public
         onlyOwner
@@ -41,14 +49,18 @@ contract PickHausResume is ERC721, ERC721URIStorage, Pausable, Ownable {
         // Todo remove address from array and remove gap to save on storage and gas with an index
     }
 
+    // TO pause the contract
     function pause() public onlyOwner {
         _pause();
     }
+
+    // TO unpause the contract
 
     function unpause() public onlyOwner {
         _unpause();
     }
 
+    // Function for minting token
     function safeMint(address to, string memory uri)
         public
         onlyOwner
