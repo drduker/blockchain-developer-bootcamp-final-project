@@ -12,7 +12,7 @@ A future iteration of the app will take advantage of the contract's minting of t
 
 # Public Eth address for NFT: 
 * 0x370552cb51c1e84d922B11d2C0A5423CBf17b2c6
-# Contract deployed on Robsten at this address:
+# Contract deployed on Ropsten at this address:
 * 0xe7995F40E063646A4F1a727EbCc838E2DDca8028
 
 # Deployed to netlify:
@@ -62,7 +62,7 @@ To run all tests, simply run: `truffle test` from contract folder
 * yarn
 
 ## Screencast link:
-https://www.youtube.com/watch?v=kp1_s8KEeS1
+https://youtu.be/ksqN6tU7VNo
 
 # Test My Application:
 1. Go to https://61a5cfb5bc2d0a00089cd94d--sharp-lichterman-6d7d74.netlify.app/
