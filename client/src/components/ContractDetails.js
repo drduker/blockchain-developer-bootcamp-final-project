@@ -2,7 +2,7 @@ import { usePickHausResume } from "../hooks/usePickHausResume";
 import { Typography, Box } from "@material-ui/core";
 
 const ContractDetails = () => {
-  const { isOwner, paused, size } = usePickHausResume();
+  const { isOwner, paused } = usePickHausResume();
   return (
     <Box display='flex' flexDirection={'column'} alignItems={'center'} justifyContent='space-evenly' height={100} width={300}>
       <Typography>

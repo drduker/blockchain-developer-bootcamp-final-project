@@ -10,7 +10,7 @@ const ContractDataProvider = ({ children }) => {
       fetchOwner();
       fetchPaused();
     }
-  }, [account]);
+  });
   return <>{children}</>;
 };
 

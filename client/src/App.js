@@ -13,7 +13,7 @@ function App() {
   const { activate } = useWeb3React();
   useEffect(() => {
     activate(injected);
-  }, []);
+  });
   return (
     <>
       <ThemeProvider theme={theme}>
