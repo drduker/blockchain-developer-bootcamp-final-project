@@ -7,7 +7,7 @@ Resume NFT Requester
 This project will allow a user to download my resume as an NFT if I approve it.
 
 ## Process:  
-A user goes to the distributed app and immediately metamask is prompted for login to connect an account.  If the user would like to request my resume using their public address, they press "Request My Resume" and they are prompted by MetaMask to approve the transaction and pay the fees.  During the request process you can see a nice loading process and once the transaction is complete the requester is notified with "Transaction Successful" prompt in the browser.  
+A user goes to the distributed app and immediately metamask is prompted for login to connect an account.  If the user would like to request my resume using their public address, they press "Request My Resume" and they are prompted by MetaMask to approve the transaction and pay the small fees to submit the request.  During the request process you can see a nice loading process and once the transaction is complete the requester is notified with "Transaction Successful" prompt in the browser.  
 A future iteration of the app will take advantage of the contract's minting of the NFT to the requester after the owner approves the request (or pays me a fee to make it more automatic).  The owner will have an area to approve all transactions in a separate page.
 
 # Public Eth address for NFT: 
