@@ -40,11 +40,9 @@ contract PickHausResume is ERC721, ERC721URIStorage, Pausable, Ownable {
     }
 
     // Future state where safeMint is instantiated after this approval to return my resume as an NFT to the requester after approval (or payment :))
-    function approveResumeRequest(address _address)
-        public
-        onlyOwner
+    function approveResumeRequest(address _address) public onlyOwner
     {
-        approved[msg.sender] = true;
+        approved[_address] = true;
         safeMint(_address, "https://gateway.pinata.cloud/ipfs/Qmc1AG4SEpKUTV9pSirr3ouEpbGS6og8irJ6PghoY5wGbH");
         // Todo remove address from array and remove gap to save on storage and gas with an index
     }
